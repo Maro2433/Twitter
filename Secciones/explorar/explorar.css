@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 275px auto 15%;
+  margin: 0 auto;
+  max-width: 1250px;
+}
+
+
+.left-sidebar { 
+  position: fixed;   
+  height: 100vh;
+  border-right: 1px solid #2F3336;
+  width: 274px;
+}
+
+.left-sidebar .logo {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;    
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+.left-sidebar .logo:hover {
+  background: rgba(223, 223, 223, 0.1);
+  
+}
+
+.left-sidebar .logo img {
+  width: 26px;
+}
+
+/*-----------items del slide----------*/
+
+.sidebar-content {
+  text-decoration: none;
+}
+
+.sidebar-content img {
+  height: 26.25px;
+  margin-right: 20px;
+}
+
+.slide-items {
+  font-size: 20px;
+  transition: background-color 0.3s;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+}
+
+.slide-items .item {
+  transition: background-color 0.3s;
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  padding: 12px;
+  border-radius: 100px;
+}
+
+.slide-items .item:hover {
+  background: rgba(223, 223, 223, 0.1);
+  border-radius: 100px;
+}
+
+.tweet-button {
+  background-color: #1D9BF0;
+  color: white;
+  border: 0px solid #fff;
+  border-radius: 100px;
+  padding: 0 100px;
+  font-size: 17px;
+  margin: 9px 0;
+  cursor: pointer;
+  width: 230px;
+  height: 51px;
+  font-weight: bold;
+  transition: background-color 0.3s
+}
+
+.tweet-button span {
+  position: relative;
+  text-align: center;
+  right: 15px;
+}
+
+.tweet-button:hover {
+  background-color: #198dda ;
+}
+
+/*=============================*/
+
+
+.account {
+  position: absolute;
+  bottom: 1dvw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 12px 12px 12px 12px;
+}
+
+.account:hover {
+  background: rgba(223, 223, 223, 0.1);
+  border-radius: 100px;
+}
+
+.account .acc-logo img {
+  width: 40px;
+  border-radius: 100%;
+}
+
+.account .acc-text {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  color: rgb(102, 102, 102);
+}
+
+.account .acc-text span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.account .acc-points {
+  margin-left: 50px;
+}
+
+.account .acc-points img {
+  width: 20px;
+}
+  
+  .menu {
+    background-color: black; /* Cambiando el fondo a negro */
+    grid-column: 2/3;
+    margin: 0px ;
+    
+    
+    border: 1px rgb(31,33,35,255) solid ;
+    
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .menu li {
+    display: inline-flex;
+    margin-right: 0px;
+    font-size: 11pt;
+    text-align: left;
+  }
+  
+  .menu a {
+    color: #555; /* Cambiando el color del texto a blanco */
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 0px;
+  }
+  
+  .menu a:hover {
+    background-color: #202327; /* Cambiando el color de fondo en hover */
+  }
+  
+  .menu a.active {
+    background-color: #000;
+    color: #fff;
+    
+    
+  }
+  .inpBuscar{
+    border: #000;
+    text-align: left;
+    border-radius: 25px;
+    background-color: #202327;
+    color:  #676b70;
+    width: 85%;
+    height: 40px;
+    margin: 5px 20px;
+  }
+  .tendencias{
+    color: #555;
+    
+    grid-column: 2/3;
+    text-align: left;
+    text-decoration: none;
+    padding: 20px 20px;
+    
+    margin: 0px ;
+    border: 1px rgb(31,33,35,255) solid ;
+  }
+  /*Estilos Div de Videos para ti */ 
+  .videosParaTi{
+    padding: 20px 20px;
+    grid-column: 2/3;
+    border: 1px rgb(31,33,35,255) solid ;
+    
+  }
+  .v{
+    height: 207px;
+    width: 162px;
+  }
+  .lbVideos{
+    color: #fff;
+    font-size: 20px;
+  }
+  .lbTipo{
+    color: #555;
+    font-size: 11px;
+  }
+  .lbTendencia{
+    color: #fff;
+    font-size: 15px;
+  }
+  .tendencias a{
+    
+    text-align: left;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 0px;
+    ;
+  }
+  .tendencias a:hover{
+    background-color: #202327;
+    width: max-content;
+  }
+  .t1{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  /* tendencias 2*/
+  .tendencias2{
+    padding: 20px 20px;
+    grid-column: 2/3;
+    border: 1px rgb(31,33,35,255) solid ;
+  }
