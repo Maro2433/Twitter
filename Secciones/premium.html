@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio / X</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="shorcut icon" href="img/twitter-logo.png">
+    <title>Premium</title>
+    <link rel="stylesheet" href="premium.css" type="text/css">
+    <link rel="shorcut icon" href="../Principal/img/twitter-logo.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -16,55 +16,57 @@
         </div>
             <div class="sidebar-content">
                 <div class="slide-items">
-                    <a class="item" class="hola" href="./index.html"><img src="svg/home-svgrepo-com.svg" alt="">
+                    <a class="item" class="hola" href="../Principal/index.html"><img src="../Principal/svg/home-svgrepo-com.svg" alt="">
                     <span><b>Inicio</b></span>
                     </a>
                 </div>
 
                 <div class="slide-items">
-                    <a class="item" href=""><img src="svg/search.svg" alt="">
+                    <a class="item" href=""><img src="../Principal/svg/search.svg" alt="">
                     <span>Explorar</span>
                     </a>
                 </div>
 
                 <div class="slide-items">
-                    <a class="item" href=""><img src="svg/notification-svgrepo-com.svg" alt="">
+                    <a class="item" href=""><img src="../Principal/svg/notification-svgrepo-com.svg" alt="">
                     <span>Notificaciones</span>
                     </a>
                 </div>
 
                 <div class="slide-items">
-                    <a class="item" href=""><img src="svg/messages.svg" alt="">
+                    <a class="item" href=""><img src="../Principal/svg/messages.svg" alt="">
                     <span>Mensajes</span>
                     </a>
                 </div>
 
                 <div class="slide-items">
-                    <a class="item" href=""><img src="svg/list-svgrepo-com.svg" alt="">
+                    <a class="item" href=""><img src="../Principal/svg/list-svgrepo-com.svg" alt="">
                     <span>Listas</span>
                     </a>
                 </div>
 
                 <div class="slide-items">
-                    <a class="item" href=""><img src="svg/comunities.svg" alt="">
+                    <a class="item" href=""><img src="../Principal/svg/comunities.svg" alt="">
                     <span>Comunidades</span>
                     </a>
                 </div>
 
-                <div class="slide-items">
-                    <a class="item" href="../Secciones/premium.html"><img class="slide-logo" src="img/twitter-logo.png" alt="">
-                    <span>Premium</span>
-                    </a>
+                <div id="premium-floating">
+                    <div class="slide-items">
+                        <a class="item" href="../Secciones/premium.html"><img class="slide-logo" src="../Principal/img/twitter-logo.png" alt="">
+                        <span>Premium</span>
+                        </a>
+                    </div>
                 </div>
-
+                
                 <div class="slide-items">
-                    <a class="item" href=""><img src="svg/person.svg" alt="">
+                    <a class="item" href=""><img src="../Principal/svg/person.svg" alt="">
                     <span>Perfil</span>
                     </a>
                 </div>
 
                 <div id="more-options" >
-                    <div class="options-content"><img src="svg/more.svg" alt="">
+                    <div class="options-content"><img src="../Principal/svg/more.svg" alt="">
                     <span>Más opciones</span>
                     </div>
                     
@@ -77,11 +79,11 @@
             <div class="winsup">
                 <div class="conectar">
                     <a href="">
-                    <li><img src="svg/arroba.svg" alt=""><span>Conectar</span></li></a>
+                    <li><img src="../Principal/svg/arroba.svg" alt=""><span>Conectar</span></li></a>
                 </div>
                 <div class="monetizar">
                     <a href="">
-                    <li><img src="svg/monet.svg" alt=""><span>Monetización</span></li></a>
+                    <li><img src="../Principal/svg/monet.svg" alt=""><span>Monetización</span></li></a>
                 </div>
                 <div class="border"></div>
             </div>
@@ -89,7 +91,7 @@
                 <div class="winsdowns">
                     <li id="btn1">
                         <span >Estudio para creadores</span>
-                        <img id="img1" src="svg/arrow.svg" alt="">
+                        <img id="img1" src="../Principal/svg/arrow.svg" alt="">
                     </li>
                     <div class="dropdown-content" id="content1">
                         <a href="https://analytics.twitter.com/">Analytics</a>
@@ -97,7 +99,7 @@
     
                     <li id="btn2">
                         <span >Herramientas profesionales</span>
-                        <img id="img2" src="svg/arrow.svg" alt="">
+                        <img id="img2" src="../Principal/svg/arrow.svg" alt="">
                     </li>
                     <div class="dropdown-content" id="content2">
                         <a href="https://ads.twitter.com/onboarding/18ce55mrxqt/welcome?ref=gl-tw-tw-twitter-ads-rweb">
@@ -106,7 +108,7 @@
     
                     <li id="btn3">
                         <span >Configuración y soporte</span>
-                        <img id="img3" src="svg/arrow.svg" alt="">
+                        <img id="img3" src="../Principal/svg/arrow.svg" alt="">
                     </li>
                     <div class="dropdown-content" id="content3">
                         <a class="one" href="#">Configuración y privacidad</a>
@@ -122,16 +124,44 @@
 
             <div class="account">
                 <div class="acc-logo">
-                    <img src="img/blank-profile-picture-973460_1280-580x580.jpg" alt="">
+                    <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg" alt="">
                 </div>
                 <div class="acc-text">
                         <span>Juan</span>
                         @Juan1234567
                 </div>
                 <div class="acc-points">
-                    <img src="svg/points.svg" alt="">
+                    <img src="../Principal/svg/points.svg" alt="">
                 </div>
             </div>
+
+        <div class="modal" id="premium-sub-floating">
+            <div class="modal-img">
+                <a href="../Principal/index.html"><img src="../Principal/svg/close-svgrepo-com.svg" alt=""></a>
+            </div>
+            <div class="modal-content">
+                <h3>¿Quién eres?</h3>
+                <p>Elige la suscripción correcta para ti:</p>
+                <div class="contenedor">
+                    <div class="persona seleccionado">
+                        <h4>Premium</h4>
+                        <span>Persona</span>
+                        <h4>Para personas y creadores</h4>
+                    </div>
+                    <div class="organización">
+                        <h4>Organizaciones Verificadas</h4>
+                        <span>Organización</span>
+                        <h4>Para empresas, organismos gubernamentales y organizaciones sin fines de lucro</h4>
+                    </div>
+                </div>
+                <div class="modal-input">
+                    <a href="https://twitter.com/i/premium_sign_up"><input type="submit" value="Suscribirse"></a>
+                </div>
+                <div class="modal-información">
+                    <span>Más información sobre <a href="https://help.twitter.com/es/using-x/x-premium">Premium</a> y <a href="https://help.twitter.com/es/using-x/verified-organizations">Organizaciones Verificadas</a></span>
+                </div>
+            </div>
+        </div>
         
     </div>
 
@@ -148,7 +178,7 @@
             </div>
         </div>
         <div class="post">
-            <img src="img/blank-profile-picture-973460_1280-580x580.jpg" alt="">
+            <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg" alt="">
             <input type="text" placeholder="¡¿Qué está pasando?!">
             <div class="logos">
                 <svg  width="20px" height="20px"viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>image-picture</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-360.000000, -99.000000)" fill="#1d9bf0"> <path d="M368,109 C366.896,109 366,108.104 366,107 C366,105.896 366.896,105 368,105 C369.104,105 370,105.896 370,107 C370,108.104 369.104,109 368,109 L368,109 Z M368,103 C365.791,103 364,104.791 364,107 C364,109.209 365.791,111 368,111 C370.209,111 372,109.209 372,107 C372,104.791 370.209,103 368,103 L368,103 Z M390,116.128 L384,110 L374.059,120.111 L370,116 L362,123.337 L362,103 C362,101.896 362.896,101 364,101 L388,101 C389.104,101 390,101.896 390,103 L390,116.128 L390,116.128 Z M390,127 C390,128.104 389.104,129 388,129 L382.832,129 L375.464,121.535 L384,112.999 L390,118.999 L390,127 L390,127 Z M364,129 C362.896,129 362,128.104 362,127 L362,126.061 L369.945,118.945 L380.001,129 L364,129 L364,129 Z M388,99 L364,99 C361.791,99 360,100.791 360,103 L360,127 C360,129.209 361.791,131 364,131 L388,131 C390.209,131 392,129.209 392,127 L392,103 C392,100.791 390.209,99 388,99 L388,99 Z" id="image-picture" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
@@ -164,7 +194,7 @@
         <div class="posts">
             <div class="publicacion">
                 <div class="user-avatar">
-                <img src="img/blank-profile-picture-973460_1280-580x580.jpg">
+                <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg">
             </div>
             <div class="post-content">
                 <div class="post-user-info">
@@ -175,7 +205,7 @@
                 <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sint consequuntur necessitatibus ullam excepturi ipsa labore possimus enim quas officiis?                    
                 </p>
                 <div class="post-img">
-                    <img src="img/blank-profile-picture-973460_1280-580x580.jpg">
+                    <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg">
                 </div>
                 <div class="post-icons">
                     <svg width="18px" height="18px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#71767b" d="M3 11.2c0 0.1 0 0.1 0 0 0 0.1 0 0.1 0 0 0 0 0 0 0 0z"></path> <path fill="#71767b" d="M8.3 1c-4.4 0-8.3 2.6-8.3 5.6 0 2 1.1 3.7 3 4.7 0 0 0 0 0 0s0 0.1 0 0.1c-0.1 1.3-0.9 1.7-0.9 1.7l-1.8 0.9h2c2.5 0 4.3-1.1 5.1-1.9 0.3 0 0.5 0 0.8 0 4.3 0 7.8-2.5 7.8-5.6s-3.4-5.5-7.7-5.5zM8.2 11.1c-0.3 0-0.7 0-0.9 0h-0.3l-0.2 0.2c-0.5 0.5-1.6 1.4-3.3 1.7 0.3-0.5 0.5-1.1 0.5-2v-0.3l-0.3-0.1c-1.8-0.9-2.7-2.3-2.7-4 0-2.4 3.5-4.6 7.3-4.6 3.7 0 6.7 2 6.7 4.6 0 2.4-3.1 4.5-6.8 4.5z"></path> </g></svg>
@@ -187,7 +217,7 @@
             </div>
             <div class="publicacion">
                 <div class="user-avatar">
-                <img src="img/blank-profile-picture-973460_1280-580x580.jpg">
+                <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg">
             </div>
             <div class="post-content">
                 <div class="post-user-info">
@@ -198,7 +228,7 @@
                 <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sint consequuntur necessitatibus ullam excepturi ipsa labore possimus enim quas officiis?                    
                 </p>
                 <div class="post-img">
-                    <img src="img/blank-profile-picture-973460_1280-580x580.jpg">
+                    <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg">
                 </div>
                 <div class="post-icons">
                     <svg width="18px" height="18px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#71767b" d="M3 11.2c0 0.1 0 0.1 0 0 0 0.1 0 0.1 0 0 0 0 0 0 0 0z"></path> <path fill="#71767b" d="M8.3 1c-4.4 0-8.3 2.6-8.3 5.6 0 2 1.1 3.7 3 4.7 0 0 0 0 0 0s0 0.1 0 0.1c-0.1 1.3-0.9 1.7-0.9 1.7l-1.8 0.9h2c2.5 0 4.3-1.1 5.1-1.9 0.3 0 0.5 0 0.8 0 4.3 0 7.8-2.5 7.8-5.6s-3.4-5.5-7.7-5.5zM8.2 11.1c-0.3 0-0.7 0-0.9 0h-0.3l-0.2 0.2c-0.5 0.5-1.6 1.4-3.3 1.7 0.3-0.5 0.5-1.1 0.5-2v-0.3l-0.3-0.1c-1.8-0.9-2.7-2.3-2.7-4 0-2.4 3.5-4.6 7.3-4.6 3.7 0 6.7 2 6.7 4.6 0 2.4-3.1 4.5-6.8 4.5z"></path> </g></svg>
@@ -210,7 +240,7 @@
             </div>
             <div class="publicacion">
                 <div class="user-avatar">
-                <img src="img/blank-profile-picture-973460_1280-580x580.jpg">
+                <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg">
             </div>
             <div class="post-content">
                 <div class="post-user-info">
@@ -221,7 +251,7 @@
                 <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sint consequuntur necessitatibus ullam excepturi ipsa labore possimus enim quas officiis?                    
                 </p>
                 <div class="post-img">
-                    <img src="img/blank-profile-picture-973460_1280-580x580.jpg">
+                    <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg">
                 </div>
                 <div class="post-icons">
                     <svg width="18px" height="18px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#71767b" d="M3 11.2c0 0.1 0 0.1 0 0 0 0.1 0 0.1 0 0 0 0 0 0 0 0z"></path> <path fill="#71767b" d="M8.3 1c-4.4 0-8.3 2.6-8.3 5.6 0 2 1.1 3.7 3 4.7 0 0 0 0 0 0s0 0.1 0 0.1c-0.1 1.3-0.9 1.7-0.9 1.7l-1.8 0.9h2c2.5 0 4.3-1.1 5.1-1.9 0.3 0 0.5 0 0.8 0 4.3 0 7.8-2.5 7.8-5.6s-3.4-5.5-7.7-5.5zM8.2 11.1c-0.3 0-0.7 0-0.9 0h-0.3l-0.2 0.2c-0.5 0.5-1.6 1.4-3.3 1.7 0.3-0.5 0.5-1.1 0.5-2v-0.3l-0.3-0.1c-1.8-0.9-2.7-2.3-2.7-4 0-2.4 3.5-4.6 7.3-4.6 3.7 0 6.7 2 6.7 4.6 0 2.4-3.1 4.5-6.8 4.5z"></path> </g></svg>
@@ -233,7 +263,7 @@
             </div>
             <div class="publicacion">
                 <div class="user-avatar">
-                <img src="img/blank-profile-picture-973460_1280-580x580.jpg">
+                <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg">
             </div>
             <div class="post-content">
                 <div class="post-user-info">
@@ -244,7 +274,7 @@
                 <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sint consequuntur necessitatibus ullam excepturi ipsa labore possimus enim quas officiis?                    
                 </p>
                 <div class="post-img">
-                    <img src="img/blank-profile-picture-973460_1280-580x580.jpg">
+                    <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg">
                 </div>
                 <div class="post-icons">
                     <svg width="18px" height="18px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#71767b" d="M3 11.2c0 0.1 0 0.1 0 0 0 0.1 0 0.1 0 0 0 0 0 0 0 0z"></path> <path fill="#71767b" d="M8.3 1c-4.4 0-8.3 2.6-8.3 5.6 0 2 1.1 3.7 3 4.7 0 0 0 0 0 0s0 0.1 0 0.1c-0.1 1.3-0.9 1.7-0.9 1.7l-1.8 0.9h2c2.5 0 4.3-1.1 5.1-1.9 0.3 0 0.5 0 0.8 0 4.3 0 7.8-2.5 7.8-5.6s-3.4-5.5-7.7-5.5zM8.2 11.1c-0.3 0-0.7 0-0.9 0h-0.3l-0.2 0.2c-0.5 0.5-1.6 1.4-3.3 1.7 0.3-0.5 0.5-1.1 0.5-2v-0.3l-0.3-0.1c-1.8-0.9-2.7-2.3-2.7-4 0-2.4 3.5-4.6 7.3-4.6 3.7 0 6.7 2 6.7 4.6 0 2.4-3.1 4.5-6.8 4.5z"></path> </g></svg>
@@ -256,7 +286,7 @@
             </div>
             <div class="publicacion">
                 <div class="user-avatar">
-                <img src="img/blank-profile-picture-973460_1280-580x580.jpg">
+                <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg">
             </div>
             <div class="post-content">
                 <div class="post-user-info">
@@ -267,7 +297,7 @@
                 <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sint consequuntur necessitatibus ullam excepturi ipsa labore possimus enim quas officiis?                    
                 </p>
                 <div class="post-img">
-                    <img src="img/blank-profile-picture-973460_1280-580x580.jpg">
+                    <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg">
                 </div>
                 <div class="post-icons">
                     <svg width="18px" height="18px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#71767b" d="M3 11.2c0 0.1 0 0.1 0 0 0 0.1 0 0.1 0 0 0 0 0 0 0 0z"></path> <path fill="#71767b" d="M8.3 1c-4.4 0-8.3 2.6-8.3 5.6 0 2 1.1 3.7 3 4.7 0 0 0 0 0 0s0 0.1 0 0.1c-0.1 1.3-0.9 1.7-0.9 1.7l-1.8 0.9h2c2.5 0 4.3-1.1 5.1-1.9 0.3 0 0.5 0 0.8 0 4.3 0 7.8-2.5 7.8-5.6s-3.4-5.5-7.7-5.5zM8.2 11.1c-0.3 0-0.7 0-0.9 0h-0.3l-0.2 0.2c-0.5 0.5-1.6 1.4-3.3 1.7 0.3-0.5 0.5-1.1 0.5-2v-0.3l-0.3-0.1c-1.8-0.9-2.7-2.3-2.7-4 0-2.4 3.5-4.6 7.3-4.6 3.7 0 6.7 2 6.7 4.6 0 2.4-3.1 4.5-6.8 4.5z"></path> </g></svg>
@@ -301,7 +331,7 @@
                     <span>Eagles vs Commanders</span>
                 </div>
                 <div class="titulos-img">
-                    <img src="./svg/points.svg" alt="">
+                    <img src="../Principal/svg/points.svg" alt="">
                 </div>
             </div>
             <div class="titulos">
@@ -310,7 +340,7 @@
                     <span>Paisas</span>
                 </div>
                 <div class="titulos-img">
-                    <img src="./svg/points.svg" alt="">
+                    <img src="../Principal/svg/points.svg" alt="">
                 </div>
             </div>
             <div class="titulos">
@@ -319,7 +349,7 @@
                     <span>Juan Frío</span>
                 </div>
                 <div class="titulos-img">
-                    <img src="./svg/points.svg" alt="">
+                    <img src="../Principal/svg/points.svg" alt="">
                 </div>
             </div>
             <div class="titulos">
@@ -328,7 +358,7 @@
                     <span>Luis Díaz</span>
                 </div>
                 <div class="titulos-img">
-                    <img src="./svg/points.svg" alt="">
+                    <img src="../Principal/svg/points.svg" alt="">
                 </div>
             </div>
             <div class="titulos">
@@ -337,7 +367,7 @@
                     <span>Justin Bieber</span>
                 </div>
                 <div class="titulos-img">
-                    <img src="./svg/points.svg" alt="">
+                    <img src="../Principal/svg/points.svg" alt="">
                 </div>
             </div>
             <div class="btn-mostrar">
@@ -353,7 +383,7 @@
             <h2>A quién seguir</h2>
                 <div class="seg">
                     <div class="seg1-img">
-                        <img src="img/blank-profile-picture-973460_1280-580x580.jpg" alt="">
+                        <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg" alt="">
                     </div>
                 <div class="seg1-text">
                     <span>Gabriela Morales</span>
@@ -363,7 +393,7 @@
                 </div>
                 <div class="seg">
                     <div class="seg2-img">
-                        <img src="img/blank-profile-picture-973460_1280-580x580.jpg" alt="">
+                        <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg" alt="">
                     </div>
                 <div class="seg2-text">
                     <span>Luisa Villa</span>
@@ -373,7 +403,7 @@
                 </div>
                 <div class="seg">
                     <div class="seg3-img">
-                        <img src="img/blank-profile-picture-973460_1280-580x580.jpg" alt="">
+                        <img src="../Principal/img/blank-profile-picture-973460_1280-580x580.jpg" alt="">
                     </div>
                 <div class="seg3-text">
                     <span>Fernando Alonso</span>
