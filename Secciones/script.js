@@ -75,3 +75,19 @@ document.addEventListener("click", function (event) {
     content3.style.display = "none";
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elementos = document.querySelectorAll(".persona, .organización");
+
+  elementos.forEach(function (elemento) {
+    elemento.addEventListener("click", function () {
+      
+      elementos.forEach(function (otroElemento) {
+        otroElemento.classList.remove("seleccionado");
+      });
+
+      
+      this.classList.add("seleccionado");
+    });
+  });
+});
