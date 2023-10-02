@@ -991,23 +991,3 @@ input:focus {
     color: #fff;
     font-weight: bold;
 }
-
-/*Premium*/
-
-.container-premium {
-    position: relative;
-    width: 400px;
-    background: #198dda;
-}
-
-.container-sub-premium {
-
-}
-
-.persona {
-
-}
-
-.organización {
-
-}
