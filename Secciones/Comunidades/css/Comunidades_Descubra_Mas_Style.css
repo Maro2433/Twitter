@@ -328,6 +328,8 @@ main {
 }
 .img_comunidad {
     width: 30px;
+    height: 30px;
+    object-fit: cover;
     border-radius: 50%;
     border: 2px solid black;
 }
@@ -534,50 +536,71 @@ main {
     background: rgba(223, 223, 223, 0.1);
     border-radius: 5px;
 }
-.seg .seg1-img img {
+.seg .seg1-img {
     width: 40px;
+    height: 40px;
+}
+
+.seg .seg1-img img {
+    height: 100%;
+    object-fit: cover;
     border-radius: 100%;
 }
+
 .seg .seg1-text {
     display: flex;
     position: relative;
-    left: 10px;
+    right: -10px;
     flex-direction: column;
     color: rgb(102, 102, 102);
 }
+
 .seg .seg1-text span {
+    width: 125px;
     color: #fff;
     font-weight: bold;
 }
+
 /* */
 .seg .seg2-img img {
     width: 40px;
+    height: 40px;
+    object-fit: cover;
     border-radius: 100%;
 }
+
 .seg .seg2-text {
     display: flex;
     position: relative;
-    right: 10px;
+    right: -10px;
     flex-direction: column;
     color: rgb(102, 102, 102);
 }
+
 .seg .seg2-text span {
+    width: 125px;
     color: #fff;
     font-weight: bold;
 }
+
 /**/
 .seg .seg3-img img {
     width: 40px;
+    height: 40px;
+    object-fit: cover;
     border-radius: 100%;
 }
+
 .seg .seg3-text {
     display: flex;
     position: relative;
-    left: 10px;
+    right: -10px;
     flex-direction: column;
     color: rgb(102, 102, 102);
 }
+
 .seg .seg3-text span {
+    width: 125px;
     color: #fff;
     font-weight: bold;
 }
