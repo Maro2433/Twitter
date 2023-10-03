@@ -709,7 +709,6 @@ input:focus {
 }
 
 .follow-box button {
-    width: 90px;
     background-color: white;
     color: black;
     border: none;
@@ -744,12 +743,11 @@ input:focus {
 }
 
 .seg .seg1-img {
-    width: 50px;
+    width: 40px;
     height: 40px;
 }
 
 .seg .seg1-img img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 100%;
@@ -758,25 +756,21 @@ input:focus {
 .seg .seg1-text {
     display: flex;
     position: relative;
-    left: 10px;
+    right: -10px;
     flex-direction: column;
     color: rgb(102, 102, 102);
 }
 
 .seg .seg1-text span {
+    width: 125px;
     color: #fff;
     font-weight: bold;
 }
 
 /* */
-.seg .seg2-img {
+.seg .seg2-img img {
     width: 40px;
     height: 40px;
-}
-
-.seg .seg2-img img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 100%;
 }
@@ -784,26 +778,21 @@ input:focus {
 .seg .seg2-text {
     display: flex;
     position: relative;
-    right: 10px;
+    right: -10px;
     flex-direction: column;
     color: rgb(102, 102, 102);
 }
 
 .seg .seg2-text span {
+    width: 125px;
     color: #fff;
     font-weight: bold;
 }
 
 /**/
-.seg .seg3-img {
+.seg .seg3-img img {
     width: 40px;
     height: 40px;
-}
-
-
-.seg .seg3-img img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 100%;
 }
@@ -811,12 +800,13 @@ input:focus {
 .seg .seg3-text {
     display: flex;
     position: relative;
-    left: 10px;
+    right: -10px;
     flex-direction: column;
     color: rgb(102, 102, 102);
 }
 
 .seg .seg3-text span {
+    width: 125px;
     color: #fff;
     font-weight: bold;
 }
