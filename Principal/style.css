@@ -743,8 +743,15 @@ input:focus {
     border-radius: 5px;
 }
 
+.seg .seg1-img {
+    width: 50px;
+    height: 40px;
+}
+
 .seg .seg1-img img {
-    width: 40px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 100%;
 }
 
@@ -762,8 +769,15 @@ input:focus {
 }
 
 /* */
-.seg .seg2-img img {
+.seg .seg2-img {
     width: 40px;
+    height: 40px;
+}
+
+.seg .seg2-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 100%;
 }
 
@@ -781,8 +795,16 @@ input:focus {
 }
 
 /**/
-.seg .seg3-img img {
+.seg .seg3-img {
     width: 40px;
+    height: 40px;
+}
+
+
+.seg .seg3-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 100%;
 }
 
