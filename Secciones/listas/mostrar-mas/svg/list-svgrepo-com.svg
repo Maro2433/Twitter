@@ -1,0 +1,12 @@
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="SVGRepo_iconCarrier">
+    <!-- Borde exterior -->
+    <rect x="0" y="0" width="24" height="24" stroke="#000000" stroke-width="25" fill="none"/>
+    <!-- Fondo blanco y líneas negras -->
+    <rect x="4" y="4" width="16" height="16" rx="3" fill="#ffffff" stroke="white" stroke-width="2"/>
+    <path d="M16 10L8 10" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    <path d="M16 14L8 14" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
