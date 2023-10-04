@@ -105,21 +105,18 @@ main {
     border-radius: 100px;
 }
 
-
-
-
-
 /* =============== Menu de opciones ============ */
+
 #floating-window {
+    z-index: 1;
     display: none;
     position: absolute;
-    top: 230px;
-    left: 0;
-    /* Ajusta las coordenadas de arriba y a la izquierda según sea necesario */
+    top: 236px;
+    left: 0px;
 }
 
 .win {
-    width: 350px;
+    width: 320px;
     border-radius: 10px ;
     background-color: rgb(0, 0, 0);
     box-shadow: 1px 1px 6px rgb(204, 203, 203);
@@ -168,6 +165,14 @@ main {
     background-color: rgba(223, 223, 223, 0.1);
 }
 
+.border {
+    width: 300px;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    border: 1px solid rgba(223, 223, 223, 0.1);
+}
+
 /*======= parte de abajo =====*/
 
 .dropdown-content {
@@ -177,16 +182,6 @@ main {
 .rotated {
     transform: rotate(180deg);
 }
-
-/*
-.winsdo {
-        
-}
-
-.winsdowns {
-    
-}
-*/
 
 .winsdowns li {
     padding: 15px;
@@ -230,10 +225,33 @@ main {
 
 .dropdown-content a {
     display: flex;
-    flex-direction: column;
+}
+
+.dropdown-content img {
+    width: 20px ;
+    margin-right: 10px;
 }
 
 .dropdown-content:hover {
+    background-color: rgba(223, 223, 223, 0.1);
+}
+
+.dropdown-content3 {
+    display: none;
+    cursor: pointer;
+}
+
+.dropdown-content3 a {
+    display: flex;
+    padding: 12px;
+}
+
+.dropdown-content3 a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.dropdown-content3 a:hover {
     background-color: rgba(223, 223, 223, 0.1);
 }
 
