@@ -462,6 +462,22 @@ main {
     padding: 0 40px;
     outline: none;
   }
+.iconBuscar{
+    position: relative;
+    left: -10px;
+    bottom: 40px;
+    width: 25px;
+
+}
+
+.btnTuerca {
+    position: relative;
+    left: 600px;
+    bottom: 40px;
+    width: 35px;
+}
+
+  /****************/
   .tendencias{
     color: #555;
     grid-column: 2/3;
