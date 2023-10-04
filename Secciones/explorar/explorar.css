@@ -369,14 +369,13 @@ main {
   }
   .tendencias{
     color: #555;
-    
     grid-column: 2/3;
     text-align: left;
     text-decoration: none;
     padding: 5px 20px;
     
     margin: 0px ;
-    border: 1px rgb(31,33,35,255) solid ;
+    border: 1px rgb(31,33,35,255) solid;
   }
   /*Estilos Div de Videos para ti */ 
   .videosParaTi{
@@ -402,11 +401,15 @@ main {
     color: #fff;
     font-size: 15px;
   }
+
+
+  /* parte media, tendencias */
   .tendencias a{
     
     text-align: left;
     text-decoration: none;
-    
+    position: relative;
+    z-index: 1;
     
     ;
   }
@@ -416,10 +419,11 @@ main {
     
     
   }
+ 
   .t1 {
+    position: relative;
     width: 600px;
     height: 75px;
-    position: relative;
     left: -20px;
   }
   .deportes a,.series a{
