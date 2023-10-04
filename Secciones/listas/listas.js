@@ -202,3 +202,23 @@ ventana3.addEventListener('mouseenter', function() {
 ventana3.addEventListener('mouseleave', function() {
     ventana3.style.display = 'none'; // Cierra la ventana si el cursor se aleja de ella
 });
+
+/* ------------ FUNCION PARA LA VENTANA DE USER ------*/
+
+var account = document.getElementById('winsaccount');
+var userWindow = document.getElementById('userwindows');
+
+userWindow.style.display = 'none';
+
+account.addEventListener('click', function(event) {
+  event.stopPropagation();
+  if(userWindow.style.display === 'none') {
+      userWindow.style.display = 'block';
+  } else {
+      userWindow.style.display = 'none';
+  }
+});
+
+document.addEventListener('click', function() {
+  userWindow.style.display = 'none';
+});
