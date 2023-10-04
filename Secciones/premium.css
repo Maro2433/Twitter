@@ -28,6 +28,7 @@ main {
     height: 100vh;
     border-right: 1px solid #2F3336;
     width: 274px;
+    z-index: -1;
 }
 
 .left-sidebar .logo {
