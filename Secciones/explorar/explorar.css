@@ -359,9 +359,13 @@ main {
     border-radius: 25px;
     background-color: #202327;
     color:  #676b70;
-    width: 85%;
+    width: 78%;
     height: 40px;
     margin: 5px 20px;
+    flex: 1;
+    border: none;
+    padding: 0 40px;
+    outline: none;
   }
   .tendencias{
     color: #555;
@@ -609,9 +613,15 @@ main {
 /* icono 3 puntos*/
 
 .titulos-img {
-  
-  right: 90%;
+  position: relative;
+  right: -600px;
+  margin: -40px 10px;
   width: 20px;
   height: 20px;
   
+}
+.titulos-img:hover{
+  border: 1px rgb(31,33,35,255) solid ;
+  border-radius: 10%;
+  color: #198dda;
 }
