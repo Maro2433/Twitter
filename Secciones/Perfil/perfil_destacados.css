@@ -1109,3 +1109,7 @@ main {
     box-shadow: none;
 }
 
+.posts a{
+    text-decoration: none;
+    color: black;
+}
