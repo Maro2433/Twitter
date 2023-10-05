@@ -482,27 +482,62 @@ main {
     padding: 0 40px;
     outline: none;
   }
+
+  /* ---------- Efecto cambio de color input --------- */
+
+/* Estilos iniciales */
+#elementoClicable {
+    background: #202327;
+    border: 1px solid #000; 
+    cursor: pointer; 
+}
+
+/* Estilos cuando se hace clic */
+#elementoClicable.clickeado {
+    background-color: #000000;
+    border-color: #1D9BF0; 
+}
+.iconBuscar{
+    position: relative;
+    left: -10px;
+    bottom: 40px;
+    width: 25px;
+
+}
+
+.btnTuerca {
+    position: relative;
+    left: 600px;
+    bottom: 40px;
+    width: 35px;
+}
+
+  /****************/
   .tendencias{
     color: #555;
-    
     grid-column: 2/3;
     text-align: left;
     text-decoration: none;
     padding: 5px 20px;
     
     margin: 0px ;
-    border: 1px rgb(31,33,35,255) solid ;
+    border: 1px rgb(31,33,35,255) solid;
   }
   /*Estilos Div de Videos para ti */ 
   .videosParaTi{
-    padding: 20px 20px;
+    padding:20px 10px;
     grid-column: 2/3;
     border: 1px rgb(31,33,35,255) solid ;
     
   }
   .v{
+    
     height: 207px;
-    width: 162px;
+    width: 140px;
+    border: 1px #676b70 solid ;
+    border-radius: 5%;
+    margin: 17px 4px 0px 4px;
+    
   }
   .lbVideos{
     color: #fff;
@@ -517,11 +552,15 @@ main {
     color: #fff;
     font-size: 15px;
   }
+
+
+  /* parte media, tendencias */
   .tendencias a{
     
     text-align: left;
     text-decoration: none;
-    
+    position: relative;
+    z-index: 1;
     
     ;
   }
@@ -531,10 +570,11 @@ main {
     
     
   }
+ 
   .t1 {
+    position: relative;
     width: 600px;
     height: 75px;
-    position: relative;
     left: -20px;
   }
   .deportes a,.series a{
