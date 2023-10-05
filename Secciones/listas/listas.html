@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="slide-items">
-                    <a class="item" href=""><img src="../../Principal/svg/messages.svg" alt="">
+                    <a class="item" href="../../Mensaje/mensaje.html"><img src="../../Principal/svg/messages.svg" alt="">
                     <span>Mensajes</span>
                     </a>
                 </div>
@@ -73,52 +73,57 @@
 
         <button class="tweet-button"><span>Postear</span></button>
                 
-        <div class="win" id="floating-window">
-            <div class="winsup">
-                <div class="conectar">
-                    <a href="">
-                    <li><img src="../../Principal/svg/arroba.svg" alt=""><span>Conectar</span></li></a>
+        <!---------------- VENTANA DE MAS OPCIONES------------------>
+
+    <div class="win" id="floating-window">
+        <div class="winsup">
+            <div class="conectar">
+                <a href="">
+                <li><img src="../../../Principal/svg/arroba.svg" alt=""><span>Conectar</span></li></a>
+            </div>
+            <div class="monetizar">
+                <a href="">
+                <li><img src="../../../Principal/svg/monet.svg" alt=""><span>Monetización</span></li></a>
+            </div>
+            <div class="border"></div>
+        </div>
+        <div class="winsdo">
+            <div class="winsdowns">
+                <li id="btn1">
+                    <span >Estudio para creadores</span>
+                    <img id="img1" src="../../../Principal/svg/arrow.svg" alt="">
+                </li>
+                <div class="dropdown-content" id="content1">
+                    <a href="https://analytics.twitter.com/">
+                        <img src="../../../Principal/svg/analitic.svg" alt="">
+                        Analytics</a>
                 </div>
-                <div class="monetizar">
-                    <a href="">
-                    <li><img src="../../Principal/svg/monet.svg" alt=""><span>Monetización</span></li></a>
+
+                <li id="btn2">
+                    <span >Herramientas profesionales</span>
+                    <img id="img2" src="../../../Principal/svg/arrow.svg" alt="">
+                </li>
+                <div class="dropdown-content" id="content2">
+                    <a href="https://ads.twitter.com/onboarding/18ce55mrxqt/welcome?ref=gl-tw-tw-twitter-ads-rweb">
+                        <img src="../../../Principal/svg/adver.svg" alt="">
+                        Anuncios</a>
+                </div>
+
+                <li id="btn3">
+                    <span >Configuración y soporte</span>
+                    <img id="img3" src="../../../Principal/svg/arrow.svg" alt="">
+                </li>
+                <div class="dropdown-content3" id="content3">
+                    <a class="one" href="#"><img src="../../../Principal/svg/bx-cog.svg" alt="">Configuración y privacidad</a>
+                    <a class="two" href="https://help.twitter.com/es"><img src="../../../Principal/svg/circulo-ayuda.svg" alt="">Centro de ayuda</a>
+                    <a class="three" href="#"><img src="../../../Principal/svg/editar.svg" alt="">Mostrar</a>
+                    <a class="four" href="#"><img src="../../../Principal/svg/bx-universal-access.svg" alt="">Atajos de teclado</a>
                 </div>
             </div>
-            <div class="winsdo">
-                <div class="winsdowns">
+        </div>
+    </div>      
 
-                    <li id="btn1">
-                        <span >Estudio para creadores</span>
-                        <img id="img1" src="../../Principal/svg/arrow.svg" alt="">
-                    </li>
-                    <div class="dropdown-content" id="content1">
-                        <a href="https://analytics.twitter.com/">Analytics</a>
-                    </div>
-    
-                    <li id="btn2">
-                        <span >Herramientas profesionales</span>
-                        <img id="img2" src="../../Principal/svg/arrow.svg" alt="">
-                    </li>
-                    <div class="dropdown-content" id="content2">
-                        <a href="https://ads.twitter.com/onboarding/18ce55mrxrt/welcome?ref=gl-tw-tw-twitter-ads-rweb">
-                            Anuncios</a>
-                    </div>
-    
-                    <li id="btn3">
-                        <span >Configuración y soporte</span>
-                        <img id="img3" src="../../Principal/svg/arrow.svg" alt="">
-                    </li>
-                    <div class="dropdown-content" id="content3">
-                        <a class="one" href="#">Configuración y privacidad</a>
-                        <a class="two" href="https://help.twitter.com/es">Centro de ayuda</a>
-                        <a class="three" href="#">Mostrar</a>
-                        <a class="four" href="#">Atajos de teclado</a>
-                    </div>
-                </div>
-            </div>
-        </div>        
-
-        <div class="account">
+        <div class="account" id="winsaccount">
             <div class="acc-logo">
                 <img src="img/blank-profile-picture-973460_1280-580x580.jpg" alt="">
             </div>
@@ -127,10 +132,44 @@
                     @Juan1234567
             </div>
             <div class="acc-points">
-                <img src="svg/points.svg" alt="">
+                <img src="../../Principal/svg/points.svg" alt="">
             </div>
         </div>
     </div>
+
+    <!-----    VENTANA FLOTANTE DE USUARIOS --------->
+            
+    <div class="userwins" id="userwindows">
+        <div class="usersup">
+                <div class="user">
+                    <img src="img/blank-profile-picture-973460_1280-580x580.jpg" alt="">
+                    <div class="username">
+                        <span><b>Juan</b></span>
+                        @Juan1234567
+                    </div>
+                    <div class="usercheck">
+                        <img src="./svg/bxs-check-circle.svg" alt="">
+                    </div>
+                </div>
+            <div class="border"></div>
+        </div>
+        <div class="user-down">
+            <div class="userdown-content">
+                <li class="usr1">
+                    <span >Agregar una cuenta existente</span>
+                </li>
+
+                <li class="usr2">
+                    <span >Administrar cuentas</span>
+                </li>
+    
+                <li class="usr3">
+                    <span >Cerrar sesion de</span>
+                    @Juan1234567
+                </li>
+            </div>
+        </div>
+    </div> 
 
 <!--Contenido Principal-->
 <!--Header top-->
