@@ -465,7 +465,7 @@ main {
 }
 .fondo {
     display: flex;
-    background-image: url(../perro.jpg);
+    background-image: url(../../../Principal/img/perro.jpg);
     background-position: 0px -150px;
     width: 99.5%;
     height: 220px;
