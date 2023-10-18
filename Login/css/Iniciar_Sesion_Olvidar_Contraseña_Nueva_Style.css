@@ -88,9 +88,9 @@ body {
     margin-bottom: 100px;
 }
 .caja_de_texto_01 {
-    width: 79%;
+    width: 75%;
     height: 50px;
-    text-align: center;
+    text-align: left;
     background: black;
     border: 2px solid rgb(50, 50, 50);
     color: white;
@@ -98,13 +98,63 @@ body {
     margin-bottom: 30px;
 }
 .caja_de_texto_02 {
-    width: 79%;
+    width: 75%;
     height: 50px;
-    text-align: center;
+    text-align: left;
     background: black;
     border: 2px solid rgb(50, 50, 50);
     color: white;
     font-size: 15px;
+}
+input {
+    border: 2px solid rgb(50, 50, 50);
+    padding: 5px 10px;
+    color: white;
+    transition: border-color 0.3s;
+}
+input::placeholder {
+    position: absolute;
+}
+input:focus {
+    border-color: #1D9BF0;
+    outline: none;
+}
+input:focus::placeholder {
+    color: #1D9BF0;
+    top: 5px;
+    left: 10px;
+    font-size: 13px;
+    transition: color 0.3s, top 0.3s, left 0.3s, font-size 0.3s;
+}
+.custom-placeholder_01 {
+    position: absolute;
+    font-size: 13px;
+    top: 44.2%;
+    left: 15%;
+    transform: translateY(-50%);
+    color: #726d68;
+    pointer-events: none; 
+    transition: opacity 0s, color 0.3s;
+    opacity: 0;
+}
+.custom-placeholder_02 {
+    position: absolute;
+    font-size: 13px;
+    top: 58.9%;
+    left: 15%;
+    transform: translateY(-50%);
+    color: #726d68;
+    pointer-events: none; 
+    transition: opacity 0s, color 0.3s;
+    opacity: 0;
+}
+.login_caja_de_texto input:not(:placeholder-shown) + .custom-placeholder_01,
+.login_caja_de_texto input:not(:placeholder-shown) + .custom-placeholder_02 {
+    opacity: 1;
+}
+.login_caja_de_texto input:focus + .custom-placeholder_01,
+.login_caja_de_texto input:focus + .custom-placeholder_02 {
+    color: #1D9BF0;
 }
 .login_botones {
     display: flex;

@@ -95,3 +95,91 @@ account.addEventListener('click', function(event) {
 document.addEventListener('click', function() {
   userWindow.style.display = 'none';
 });
+
+//animacion boton me gusta para activar
+
+const seccionesIcono = document.querySelectorAll('.seccion_icono_03');
+
+seccionesIcono.forEach(seccionIcono => {
+    const icono = seccionIcono.querySelector('.icono');
+    const numero = seccionIcono.querySelector('#numero_seccion_03');
+    const estadistica = seccionIcono.querySelector('.estadistica');
+    const iconoSvg = seccionIcono.querySelector('.icono svg path');
+
+    let estadoActivo = false;
+
+    seccionIcono.addEventListener('click', () => {
+        if (!estadoActivo) {
+            // Cambia el fill del SVG en lugar del div
+            iconoSvg.style.fill = '#dd2e44';
+            iconoSvg.style.stroke = '#dd2e44';
+            numero.innerText = (parseInt(numero.innerText) + 1).toString();
+            estadistica.style.color = '#dd2e44';
+        } else {
+            // Cambia el fill del SVG en lugar del div
+            iconoSvg.style.fill = 'none';
+            iconoSvg.style.stroke = '#71767b';
+            numero.innerText = (parseInt(numero.innerText) - 1).toString();
+            estadistica.style.color = '#71767b';
+        }
+
+        estadoActivo = !estadoActivo;
+    });
+
+    seccionIcono.addEventListener('mouseover', () => {
+        if (!estadoActivo) {
+            iconoSvg.style.stroke = '#dd2e44';
+        }
+    });
+
+    seccionIcono.addEventListener('mouseout', () => {
+        if (!estadoActivo) {
+            iconoSvg.style.stroke = '#71767b';
+        }
+    });
+});
+
+//animacion boton me gusta ya activo
+
+const seccionesIconoalt = document.querySelectorAll('.seccion_icono_03-alt');
+
+seccionesIconoalt.forEach(seccionIconoalt => {
+    const iconoalt = seccionIconoalt.querySelector('.icono');
+    const numeroalt = seccionIconoalt.querySelector('#numero_seccion_03-alt');
+    const estadisticaalt = seccionIconoalt.querySelector('.estadistica-alt');
+    const iconoSvgalt = seccionIconoalt.querySelector('.icono svg path');
+
+    let estadoActivo = true;
+
+    seccionIconoalt.addEventListener('click', () => {
+        if (!estadoActivo) {
+            // Cambia el fill del SVG en lugar del div
+            iconoSvgalt.style.fill = '#dd2e44';
+            iconoSvgalt.style.stroke = '#dd2e44';
+            numeroalt.innerText = (parseInt(numeroalt.innerText) + 1).toString();
+            estadisticaalt.style.color = '#dd2e44';
+        } else {
+            // Cambia el fill del SVG en lugar del div
+            iconoSvgalt.style.fill = 'none';
+            iconoSvgalt.style.stroke = '#71767b';
+            numeroalt.innerText = (parseInt(numeroalt.innerText) - 1).toString();
+            estadisticaalt.style.color = '#71767b';
+        }
+
+        estadoActivo = !estadoActivo;
+    });
+
+    seccionIconoalt.addEventListener('mouseover', () => {
+        if (!estadoActivo) {
+            iconoSvgalt.style.stroke = '#dd2e44';
+            estadisticaalt.style.color = '#dd2e44';
+        }
+    });
+
+    seccionIconoalt.addEventListener('mouseout', () => {
+        if (!estadoActivo) {
+            iconoSvgalt.style.stroke = '#71767b';
+            estadisticaalt.style.color = '#71767b';
+        }
+    });
+});

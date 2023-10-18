@@ -75,13 +75,50 @@ body {
     margin-bottom: 200px;
 }
 .caja_de_texto {
-    width: 79%;
+    width: 75%;
     height: 50px;
-    text-align: center;
+    text-align: left;
     background: black;
     border: 2px solid rgb(50, 50, 50);
     color: white;
     font-size: 15px;
+}
+input {
+    border: 2px solid rgb(50, 50, 50);
+    padding: 5px 10px;
+    color: white;
+    transition: border-color 0.3s;
+}
+input::placeholder {
+    position: absolute;
+}
+input:focus {
+    border-color: #1D9BF0;
+    outline: none;
+}
+input:focus::placeholder {
+    color: #1D9BF0;
+    top: 5px;
+    left: 10px;
+    font-size: 13px;
+    transition: color 0.3s, top 0.3s, left 0.3s, font-size 0.3s;
+}
+.custom-placeholder {
+    position: absolute;
+    font-size: 13px;
+    top: 40.2%;
+    left: 15%;
+    transform: translateY(-50%);
+    color: #726d68;
+    pointer-events: none; 
+    transition: opacity 0s, color 0.3s;
+    opacity: 0;
+}
+.login_caja_de_texto input:not(:placeholder-shown) + .custom-placeholder {
+    opacity: 1;
+}
+.login_caja_de_texto input:focus + .custom-placeholder {
+    color: #1D9BF0;
 }
 .login_botones {
     display: flex;
