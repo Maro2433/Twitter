@@ -430,6 +430,8 @@ main {
 .content-main {
     grid-column: 2;
     color: white;
+    height: 100vh;
+    border-right: 1px solid #2F3336 ;
 }
 
 #headertp {
@@ -752,10 +754,6 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.linea {
-    grid-column: 3;
-    border-left: 1px solid #2F3336 ;
-}
 
 
 
