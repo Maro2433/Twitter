@@ -23,10 +23,13 @@
                 <h1>Introduce tu contraseña</h1>
             </div>
             <div class="login_caja_de_texto_01">
-                <input class="caja_de_texto_01" type="text" placeholder="Teléfono, correo electrónico o nombre de usuario" disabled value="">
+                <input class="caja_de_texto_01" type="text" placeholder="Teléfono, correo electrónico o nombre de usuario" disabled value="correoelectronico@gmail.com">
+                <span class="custom-placeholder_01">Teléfono, correo electrónico o nombre de usuario</span>
             </div>
             <div class="login_caja_de_texto_02">
-                <input class="caja_de_texto_02" type="password" placeholder="contraseña">
+                <input class="caja_de_texto_02" type="password" placeholder="Contraseña" id="passwordInput">
+                <span class="custom-placeholder_02">Contraseña</span>
+                <img src="../../Principal/img/ojo.png" style="position: absolute; width: 30px; cursor: pointer; right: 20%;" id="togglePassword">
             </div>
             <div class="login_contraseña">
                 <a href="./Iniciar_Sesion_Olvidar_Contraseña.html">¿Olvidaste tu contraseña?</a>
@@ -39,5 +42,17 @@
             </div>
         </div>
     </div>
+    <script>
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('passwordInput');
+
+        togglePassword.addEventListener('click', function () {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        });
+    </script>
 </body>
 </html>

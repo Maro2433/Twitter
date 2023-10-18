@@ -69,6 +69,44 @@ h1{
     border-radius: 5px;
 }
 
+input {
+    border: 2px solid rgb(50, 50, 50);
+    padding: 5px 10px;
+    color: white;
+    transition: border-color 0.3s;
+}
+input::placeholder {
+    position: absolute;
+}
+input:focus {
+    border-color: #1D9BF0;
+    outline: none;
+}
+input:focus::placeholder {
+    color: #1D9BF0;
+    top: 5px;
+    left: 10px;
+    font-size: 13px;
+    transition: color 0.3s, top 0.3s, left 0.3s, font-size 0.3s;
+}
+.custom-placeholder {
+    position: absolute;
+    font-size: 13px;
+    top: 26.1%;
+    left: 13.8%;
+    transform: translateY(-50%);
+    color: #726d68;
+    pointer-events: none; 
+    transition: opacity 0s, color 0.3s;
+    opacity: 0;
+}
+.login_botones_crearcuenta input:not(:placeholder-shown) + .custom-placeholder {
+    opacity: 1;
+}
+.login_botones_crearcuenta input:focus + .custom-placeholder {
+    color: #1D9BF0;
+}
+
 a{
     text-decoration: none;
 }

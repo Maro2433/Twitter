@@ -449,6 +449,9 @@ main {
     display: flex;
     padding: 15px;
     border-bottom: 0.1rem solid rgba(223, 223, 223, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .user-avatar {
@@ -519,13 +522,130 @@ main {
 }
 
 .post-icons {
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 480px;
+}
+.seccion_icono_01 {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+}
+.seccion_icono_02 {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+}
+.seccion_icono_03 {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+}
+.seccion_icono_04 {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+}
+.seccion_icono_05 {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+}
+.icono {
+    display: flex;
+    margin: 0;
+    padding: 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.icono svg {
+    display: flex;
+    transform: translate(1%, 5%);
+}
+.estadistica {
+    color: #71767b;
+    align-items: center;
+    padding: 0px 0px 0px 5px;
+    font-size: 15px;
+    text-align: left;
+}
+.seccion_icono_01:hover .icono {
+    background-color: #082537;
+    transition: background-color 0.3s;
 }
 
-.post-icons svg {
-    margin-right: 110px;
+.seccion_icono_01:hover .icono svg {
+    fill: #1b7dbe;
+    transition: fill 0.3s;
+}
+.seccion_icono_01:hover .estadistica span {
+    color: #1b7dbe;
+    transition: color 0.3s;
+}
+.seccion_icono_02:hover .icono {
+    background-color: #09371a;
+    transition: background-color 0.3s;
+}
+.seccion_icono_02:hover .icono svg path {
+    fill: #25d366;
+    transition: fill 0.3s;
+}
+.seccion_icono_02:hover .estadistica span {
+    color: #25d366;
+    transition: color 0.3s;
+}
+.seccion_icono_03:hover .icono {
+    background-color: #461017;
+    transition: background-color 0.3s;
+}
+.seccion_icono_03:hover .icono svg path {
+    stroke: #dd2e44;
+    transition: stroke 0.3s;
+}
+.seccion_icono_03:hover .estadistica span {
+    color: #dd2e44;
+    transition: color 0.3s;
+}
+.seccion_icono_04:hover .icono {
+    background-color: #082537;
+    transition: background-color 0.3s;
+}
+.seccion_icono_04:hover .icono svg path {
+    fill: #1b7dbe;
+    transition: fill 0.3s;
+}
+.seccion_icono_04:hover .estadistica span {
+    color: #1b7dbe;
+    transition: color 0.3s;
+}
+.seccion_icono_05:hover .icono {
+    background-color: #082537;
+    transition: background-color 0.3s;
 }
 
+.seccion_icono_05:hover .icono svg {
+    fill: #1b7dbe;
+    transition: fill 0.3s;
+}
+.seccion_icono_05:hover .estadistica span {
+    color: #1b7dbe;
+    transition: color 0.3s;
+}
 /*===========Rigth============*/
 
 .right-sidebar {
